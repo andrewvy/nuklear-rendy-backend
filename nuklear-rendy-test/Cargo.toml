@@ -1,0 +1,24 @@
+[package]
+name = "nuklear-rendy-test"
+version = "0.1.0"
+authors = ["Andrew Vy <andrew@andrewvy.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rendy = "0.4.1"
+lazy_static = "1.4.0"
+failure = "0.1.6"
+rendy-shader = "0.4.1"
+rendy-util = "0.4.1"
+log = "0.4.8"
+env_logger = "0.7.1"
+nuklear-rust = { path = "../nuklear-rust" }
+derivative = "1.0.3"
+
+[features]
+metal = ["rendy/metal"]
+dx12 = ["rendy/dx12"]
+vulkan = ["rendy/vulkan"]
+empty = ["rendy/empty"]

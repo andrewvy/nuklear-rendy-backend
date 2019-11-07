@@ -1,0 +1,18 @@
+[package]
+name = "nuklear-backend-rendy"
+version = "0.1.0"
+authors = ["Andrew Vy <andrew@andrewvy.com>"]
+description = "A Rendy drawing backend for the Nuklear 2D GUI Rust wrapper"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "nuklear_backend_rendy"
+path = "src/lib.rs"
+
+[dependencies]
+rendy = "0.4.1"
+nuklear-rust = { path = "../nuklear-rust" }
+lazy_static = "1.4.0"
+

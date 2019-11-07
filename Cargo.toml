@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "nuklear-backend-rendy",
+    "nuklear-rendy-test",
+    "nuklear-rust"
+]
